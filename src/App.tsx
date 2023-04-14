@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { createMonth } from './utils/helpers/date/createMonth'
+import { createYear } from './utils/helpers/date/createYear'
+
+import './App.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  console.log('createDate', createYear({ locale: 'en-US' }).createYearMonthes())
 
   return (
-    <div className="App">
-      
+    <div className="app__container">
+      <h1>Calendar</h1>
     </div>
   )
 }
+
+
 
 export default App
