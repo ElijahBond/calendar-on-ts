@@ -1,15 +1,18 @@
-import { createMonth } from './utils/helpers/date/createMonth'
-import { createYear } from './utils/helpers/date/createYear'
+import { useState } from 'react'
 
 import './App.scss'
 
-function App() {
+import { Calendar } from './components/Calendar/Calendar'
 
-  console.log('createDate', createYear({ locale: 'en-US' }).createYearMonthes())
+
+
+export const App: React.FC = () => {
+  const [selectedDate, selectDate] = useState(new Date())
+
 
   return (
     <div className="app__container">
-      <h1>Calendar</h1>
+      <Calendar selectedDate={selectedDate} selectDate={selectDate} />
     </div>
   )
 }

@@ -26,7 +26,7 @@ export const createDate = (params?: iCreateDateParams) => {
     const week = getWeekNumber(d);
 
     return {
-        d,
+        date: d,
         dayNumber,
         day,
         dayNumberInWeek,
