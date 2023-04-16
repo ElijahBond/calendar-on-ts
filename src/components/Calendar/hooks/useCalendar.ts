@@ -90,6 +90,9 @@ export const useCalendar = ({
             selectedMonth,
             selectedYear,
             selectedYearInterval
+        },
+        functions: {
+            setMode
         }
     }
 };
