@@ -6,3 +6,5 @@ export * from './getWeekNumber';
 export * from './getMonthesNames';
 export * from './formatDate';
 export * from './getWeekDayNames';
+export * from './checkIsToday';
+export * from './checkDateIsEqual';
